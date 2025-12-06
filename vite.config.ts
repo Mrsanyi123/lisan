@@ -4,7 +4,13 @@ import react from "@vitejs/plugin-react";
 
 export default defineConfig(({ mode }) => {
   const env = loadEnv(mode, ".", "");
+
+  // Set base path for GitHub Pages (if deploying to /lisan/)
+  // For root domain, use base: '/'
+  const base = process.env.GITHUB_PAGES === "true" ? "/lisan/" : "/";
+
   return {
+    base,
     root: ".",
     server: {
       port: 3000,
@@ -24,6 +30,7 @@ export default defineConfig(({ mode }) => {
       },
     },
     build: {
+      outDir: "dist",
       rollupOptions: {
         input: {
           main: path.resolve(__dirname, "index.html"),
