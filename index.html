@@ -3,40 +3,43 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>NOVA</title>
+    <title>Lisan</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
     <script>
       tailwind.config = {
         theme: {
           extend: {
             fontFamily: {
-              sans: ['Nunito', 'sans-serif'],
+              sans: ["Nunito", "sans-serif"],
             },
             colors: {
               nova: {
-                primary: '#2563EB',      // Vibrant Blue
-                primaryDark: '#1D4ED8',  // Darker Blue
-                secondary: '#1E293B',    // Dark Slate / Black
-                secondaryDark: '#0F172A',// Darker Slate
-                accent: '#38BDF8',       // Sky Blue
-                accentDark: '#0284C7',   // Darker Sky
-                bg: '#F8FAFC',           // Very light blue-gray background
-                text: '#0F172A',         // Very dark text
-                gray: '#E2E8F0',         // Light gray for borders
-              }
+                primary: "#2563EB", // Vibrant Blue
+                primaryDark: "#1D4ED8", // Darker Blue
+                secondary: "#1E293B", // Dark Slate / Black
+                secondaryDark: "#0F172A", // Darker Slate
+                accent: "#38BDF8", // Sky Blue
+                accentDark: "#0284C7", // Darker Sky
+                bg: "#F8FAFC", // Very light blue-gray background
+                text: "#0F172A", // Very dark text
+                gray: "#E2E8F0", // Light gray for borders
+              },
             },
             animation: {
-              'bounce-slow': 'bounce 3s infinite',
-              'spin-slow': 'spin 3s linear infinite',
-            }
+              "bounce-slow": "bounce 3s infinite",
+              "spin-slow": "spin 3s linear infinite",
+            },
           },
         },
-      }
+      };
     </script>
     <style>
       body {
-        background-color: #0F172A; /* Dark fallback */
+        background-color: #0f172a; /* Dark fallback */
         -webkit-tap-highlight-color: transparent;
       }
       /* Custom scrollbar for webkit */
@@ -44,7 +47,7 @@
         width: 8px;
       }
       ::-webkit-scrollbar-track {
-        background: #1E293B;
+        background: #1e293b;
       }
       ::-webkit-scrollbar-thumb {
         background: #334155;
@@ -53,7 +56,7 @@
       ::-webkit-scrollbar-thumb:hover {
         background: #475569;
       }
-      
+
       /* Markdown Styles for Chat */
       .prose p {
         margin-bottom: 0.5rem;
@@ -78,22 +81,9 @@
         margin-bottom: 0.2rem;
       }
     </style>
-  <script type="importmap">
-{
-  "imports": {
-    "react": "https://aistudiocdn.com/react@^19.2.1",
-    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.1/",
-    "react/": "https://aistudiocdn.com/react@^19.2.1/",
-    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.31.0",
-    "framer-motion": "https://aistudiocdn.com/framer-motion@^12.23.25",
-    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.556.0",
-    "canvas-confetti": "https://aistudiocdn.com/canvas-confetti@^1.9.2",
-    "marked": "https://aistudiocdn.com/marked@15.0.0"
-  }
-}
-</script>
-</head>
+  </head>
   <body>
     <div id="root"></div>
+    <script type="module" src="./index.tsx"></script>
   </body>
 </html>
