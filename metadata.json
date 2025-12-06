@@ -1,0 +1,7 @@
+{
+  "name": "NOVA - Language Learning",
+  "description": "A gamified, mobile-first language learning app for Ethiopian languages (Amharic, Afaan Oromo, Tigrinya) and English.",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}
