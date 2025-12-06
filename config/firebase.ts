@@ -1,15 +1,27 @@
 import { initializeApp } from "firebase/app";
 import { getAuth, GoogleAuthProvider } from "firebase/auth";
 
-// Firebase configuration - will be populated from environment variables
+// Firebase configuration - Replace with your actual Firebase config values
+// Get these from: https://console.firebase.google.com/ → Project Settings → Your apps
 const firebaseConfig = {
-  apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
-  authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN,
-  projectId: import.meta.env.VITE_FIREBASE_PROJECT_ID,
-  storageBucket: import.meta.env.VITE_FIREBASE_STORAGE_BUCKET,
-  messagingSenderId: import.meta.env.VITE_FIREBASE_MESSAGING_SENDER_ID,
-  appId: import.meta.env.VITE_FIREBASE_APP_ID,
+  apiKey: "AIzaSyCnbzTpaWAi3Kmgt2zSUrI37kynrUT893M",
+  authDomain: "nova-26e05.firebaseapp.com",
+  projectId: "nova-26e05",
+  storageBucket: "nova-26e05.firebasestorage.app",
+  messagingSenderId: "956176650134",
+  appId: "1:956176650134:web:cc3ee429eff25ed4d717b7",
+  measurementId: "G-LRFPNTK8K2",
 };
+
+// Example (replace with your actual values):
+// const firebaseConfig = {
+//   apiKey: "AIzaSyAbc123...",
+//   authDomain: "my-app.firebaseapp.com",
+//   projectId: "my-app-12345",
+//   storageBucket: "my-app-12345.appspot.com",
+//   messagingSenderId: "123456789012",
+//   appId: "1:123456789012:web:abc123def456",
+// };
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);

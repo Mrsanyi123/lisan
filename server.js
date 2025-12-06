@@ -11,9 +11,9 @@ const PORT = process.env.PORT || 3001;
 // Middleware
 // CORS configuration - allow requests from frontend
 const allowedOrigins = [
-  "http://localhost:3000",
-  process.env.FRONTEND_URL,
-  process.env.VERCEL_URL ? `https://${process.env.VERCEL_URL}` : null,
+  "https://mrsanyi123.github.io/lisan/",
+  process.env.FRONTEND_URL, // Add an env variable for the frontend URL
+  process.env.VERCEL_URL ? `https://${process.env.VERCEL_URL}` : null, // Add an env variable for the vercel URL
 ].filter(Boolean);
 
 app.use(
